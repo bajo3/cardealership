@@ -43,7 +43,7 @@ export default function AdminPage() {
   e.preventDefault()
 
   try {
-    const response = await fetch("/admin", {
+    const response = await fetch("/api/admin/users", {
       method: selectedUser ? "PUT" : "POST",
       headers: {
         "Content-Type": "application/json",
